@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<h1>Blod</h1>
+
+<ul>
+    {% for blog in site.categories.project limit:2 %}
+    <li>
+        <a href="">{{blog.title}}</a>
+        <p>{{blog.meta}}</p>
+    </li>
+    {% endfor %}
+</ul>
