@@ -7,15 +7,14 @@
 
 <header>
 	<h1>Title</h1>
-	<nav>
-		<ul>
-			<li><a href="{{site.baseurl}}/index.html">Home</a></li>
-			<li><a href="{{site.baseurl}}/news.html">News</a></li>
-		</ul>
-	</nav>
+	{% include nav.html %}
 </header>
 
 {{content}}
+
+<footer>
+	<p>© 2017 PibeDx</p>
+</footer>
 
 </body>
 </html>
